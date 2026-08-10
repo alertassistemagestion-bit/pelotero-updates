@@ -3,3 +3,4 @@
 *.exe binary
 *.dll binary
 *.config binary
+*.sql binary
