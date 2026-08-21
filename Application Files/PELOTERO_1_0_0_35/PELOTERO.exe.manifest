@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PELOTERO.exe" version="1.0.0.35" publicKeyToken="65ab4737c621e182" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="90de6711.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PELOTERO" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="PELOTERO.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.Data.v10.1.dll" size="2458112">
+      <assemblyIdentity name="DevExpress.Data.v10.1" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>/Teg5hmzXmhW3wDDGHkG/YPEYvA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.Design.v10.1.dll" size="70656">
+      <assemblyIdentity name="DevExpress.Design.v10.1" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Z08d3ts9/wiB7av3Tk+lM3kqHzc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.DXCore.Controls.Data.v6.3.dll" size="626688">
+      <assemblyIdentity name="DevExpress.DXCore.Controls.Data.v6.3" version="10.1.5.0" publicKeyToken="35C9F04B7764AA3D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>TXSrnrKYaUkpkdp66I0QgX/CqO4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.DXCore.Controls.Utils.v6.3.dll" size="3935744">
+      <assemblyIdentity name="DevExpress.DXCore.Controls.Utils.v6.3" version="10.1.5.0" publicKeyToken="35C9F04B7764AA3D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>MA+rl9WNKXzu6LIrZqOPL8xzdjU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.DXCore.Controls.XtraEditors.v6.3.dll" size="1517568">
+      <assemblyIdentity name="DevExpress.DXCore.Controls.XtraEditors.v6.3" version="10.1.5.0" publicKeyToken="35C9F04B7764AA3D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>n+eYVCsE2FLJZo7qpiIAP1U07nk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.RichEdit.v10.1.Core.dll" size="2914816">
+      <assemblyIdentity name="DevExpress.RichEdit.v10.1.Core" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>cXKehRjFqfVzNntNw8Z24CPNXoU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.Utils.v10.1.dll" size="2918400">
+      <assemblyIdentity name="DevExpress.Utils.v10.1" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>2MWuk5DyVz4/jRLh0SzPddJeaE0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraBars.v10.1.dll" size="1808384">
+      <assemblyIdentity name="DevExpress.XtraBars.v10.1" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>JjGH7INJYfGHq0Wh8xRQDHftAgI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraBars.v10.1.Design.dll" size="324608">
+      <assemblyIdentity name="DevExpress.XtraBars.v10.1.Design" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>NFmH+6gXF+L078cOY1wDOrhYENM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraEditors.v10.1.dll" size="1639424">
+      <assemblyIdentity name="DevExpress.XtraEditors.v10.1" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>hxBwCG5UO0nrcRAyG7Dx/9vPNbs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraEditors.v10.1.Design.dll" size="224256">
+      <assemblyIdentity name="DevExpress.XtraEditors.v10.1.Design" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>NwWUusxZ+iYTuw4+xkFQLrfrNTY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraGrid.v10.1.dll" size="1750016">
+      <assemblyIdentity name="DevExpress.XtraGrid.v10.1" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>q4/ABXdt8uEtpdlejow7083enB0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraLayout.v10.1.dll" size="694784">
+      <assemblyIdentity name="DevExpress.XtraLayout.v10.1" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>kvdp9ZJabobJTlOiXp2AAFyQaIA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraNavBar.v10.1.dll" size="291840">
+      <assemblyIdentity name="DevExpress.XtraNavBar.v10.1" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>XqjRcdzJ0LNLgMoV83XtrUT32cs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraPrinting.v10.1.dll" size="694272">
+      <assemblyIdentity name="DevExpress.XtraPrinting.v10.1" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>/DhuoN9Sry/B3cIDsGz9yNdLD60=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraPrinting.v10.1.Design.dll" size="55296">
+      <assemblyIdentity name="DevExpress.XtraPrinting.v10.1.Design" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>d8lQQxqwogG20pAO1Qhw7VRFVq0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraRichEdit.v10.1.dll" size="1129472">
+      <assemblyIdentity name="DevExpress.XtraRichEdit.v10.1" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>SJE08NdEjN9qyOA6HeLgoLY1Pxs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraScheduler.v10.1.dll" size="1451008">
+      <assemblyIdentity name="DevExpress.XtraScheduler.v10.1" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>wo0w1FrseWrSvWwtpedUD4KKXi4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraScheduler.v10.1.Core.dll" size="773632">
+      <assemblyIdentity name="DevExpress.XtraScheduler.v10.1.Core" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>5T+4M96PqhcRXDJ9KrIKfDr62Us=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevExpress.XtraTreeList.v10.1.dll" size="589824">
+      <assemblyIdentity name="DevExpress.XtraTreeList.v10.1" version="10.1.5.0" publicKeyToken="940CFCDE86F32EFD" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>VWefXqnEl+9iqXIA0T4HMtcvjbs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnvDTE.dll" size="245760">
+      <assemblyIdentity name="EnvDTE" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>m+55ARwGebVN1vAakzA1rNLBpQ4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PELOTERO.exe" size="82253824">
+      <assemblyIdentity name="PELOTERO" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Q1MRj9vR+KK4jFiC5NmBMhjoA1w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="22344">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>KNXqPPQvMFDHoHscdyVWZZypGYA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Data.SQLite.dll" size="405504">
+      <assemblyIdentity name="System.Data.SQLite" version="1.0.119.0" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>M28/A3SOFi90LNFGKQyfQmT+/C8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VSLangProj.dll" size="59216">
+      <assemblyIdentity name="VSLangProj" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>rrY7RNdKoS0TLDY7avwS/KoFrMg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="90de6711.ico" size="37563">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1wTSlTzSmYJ+1v5JO37G/xIEPyE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OpenSSL\cnf\ct_log_list.cnf" size="412">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>olh8TpdAi2QnTl4FK3TjdUiSwTo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OpenSSL\cnf\openssl.cnf" size="12840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>37KYdrKRdGR/vq90fKZOBhHP8Vo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OpenSSL\cnf\openssl-vms.cnf" size="12867">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>E4uGKF9Yxn9y8cb3109JHBqQULo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OpenSSL\libcrypto-4-x64.dll" size="7133696">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>OttPA/cy5Wj7dn/P4r7w9UkQlXI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OpenSSL\libssl-4-x64.dll" size="1395712">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>+ss6HbmLPD6JHMeDd5OVTiJDE44=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OpenSSL\openssl.cnf" size="12840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>37KYdrKRdGR/vq90fKZOBhHP8Vo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OpenSSL\openssl.exe" size="821248">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hFwmAIiQZZ6A/iSsLNoAfaKyGzI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="PELOTERO.db" size="135168">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MTDQ/9OUq4ROhO5bMS2JpWEz+6s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\agasajados_inclusivo.png" size="3626835">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>aUT+/btBVVVfN1qeu5JNAS4mSaA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\alta_clientes_opcion1.png" size="2633873">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>4Ye/T2Ufu8ATzCM5+5X43vpGqK0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\apertura_caja_roma.png" size="3507486">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>SiLBQdiMvw6IswIL5hIxs99ZhT8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\articulos_compuesto_roma.png" size="3466308">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>3S0kZO/CJ0gybuWNB3UmKbN2YWs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\calendario_roma.png" size="3761863">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rqbeE8Zv2NmBW5NJEmqBbeblzx0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\cambiar_contrasena_roma.png" size="2530417">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>OXTLC/pzjfU0Q5C/NNObX4qZKBE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\cambiar_usuario_roma.png" size="2672461">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nduAuHsac31W+1ulAfbluBatgGk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\cantina_mostrador.png" size="3658919">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>0bJJbC+zc9G2H+4vzeJHRhP172Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\categoria_adicionales.png" size="1593955">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Ie70DifCggEQT0Qj+KcolV9shq0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\certificados_arca_roma.png" size="3824713">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Tx2dSH6GXd4VNLAId14/j/XdRHs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\cierre_caja_roma.png" size="3493216">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vyQPE68po42UwxcXHBO+Rw7MWA4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\datos_empresa_roma.png" size="4001916">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>rpaznfgn1jHyc8WUfKKTPGZkChg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\facturacion_roma.png" size="3028976">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RoGQIvPbQuOs4QMzUXz6oAEYAm8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\gestion_turnos_opcion1.png" size="4447092">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2m43FGuFwL3RIc67VPQ9Xk2zzz4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\gestion_turnos_opcion2.png" size="2941622">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>w6DBxH6kzLaqlcthjz1HYYzBFsg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\gestion_usuarios_roma.png" size="3440425">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1Htg+DCs/OGk5f+tavQQHEGsLL4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\lista_precios_pelotero.png" size="3787371">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pN3417LI/Y2B9lCGWFv8PN0gv/E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\login_background_roma_v2.png" size="5607040">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>DubMRm0nNoDp0U9DLq957JunIho=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\permisos_usuarios_nuevo.png" size="2977665">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/pySsxk8JMqJZzgasDQ3U2es+Pw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\precios_general.png" size="5048979">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>D8blAoeha7mOHyN+fX8DVSkUuzg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\precios_nuevo_diseno.png" size="2432729">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>D4WsHBHaq/c9g6n+D9gxvvI/iq4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\reporte_caja_roma.png" size="3361038">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TSTwFex6xuCPCgHr8nqzElS7Fi0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\roma_golden_structure_isolated.png" size="2112211">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7EoVgSYpD1Rv0Q5lBVwaTEXbRkg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Recursos\Iconos\token_google_calendar_roma.png" size="3580741">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>qGiU95c7fXGgwaLYuOVicTGZqEk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SQLite.Interop.dll" size="1368576">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KYvCtSj8UO2KbW8oqLXWhit7ssA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=LAPTOP-FBPFPV0T\Fredy" issuerKeyHash="e3cf1f93016b435cd17da539280eb82b0898b6fa" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>UBSYL1QG3gR++8cX8f8LHLrn3sM=</DigestValue></Reference></SignedInfo><SignatureValue>FmDtsagamBsVkHEofOeRRchW1DsrMO7L/Sw0miz18AmFpcp72Q+z6FAAfRjhj6HnSPu08Zce0c40uIvJrY85uLC5+tOaljqSeNXbQuKWyz5np2X1oX/hn84XvhGU6SmBVJ3aX4OXzd/Fhe89UBjuWWxEcnbjQTVtDsm61k/wPOA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>4u8eVDD5u6ST9f86u06uTYxxN8Wn5sD7DLG+lkS+PqR4VheplMrjC9K67O8cKFe4ruWCbDI+DkSI/WbH49sV+vAbVeMfzO9W1jhmDHBQpFZge9O++kPSyeSxWyq5fBBjqK3noCdtn1AclCvw76arzDVnoXqskcdQ8zTI+vXXoVE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c3dee7ba1c0bfff117c7fb7e04de06542f981450" Description="" Url=""><as:assemblyIdentity name="PELOTERO.exe" version="1.0.0.35" publicKeyToken="65ab4737c621e182" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-FBPFPV0T\Fredy</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ZYqpIypZDQwLu+i9pYpQPiCSSkA=</DigestValue></Reference></SignedInfo><SignatureValue>YcpOEnk5Jrz9uaVhSYJjXMiH6Pz2OPWp+QnM9Pc+LsOgosIwkeDRAyuc7XP66nNMKOQzKg6MrosQppiDxznIW9oBwruS2t1CYESoxpI0G3uZnfPT9eJK62v76wT6fXLImu7EQBAYLEBXaDtWji/vrnpB3yBD+UTADth7RgWx0vE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>4u8eVDD5u6ST9f86u06uTYxxN8Wn5sD7DLG+lkS+PqR4VheplMrjC9K67O8cKFe4ruWCbDI+DkSI/WbH49sV+vAbVeMfzO9W1jhmDHBQpFZge9O++kPSyeSxWyq5fBBjqK3noCdtn1AclCvw76arzDVnoXqskcdQ8zTI+vXXoVE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQF/vxcdpIwL5GBMoj66u/ITANBgkqhkiG9w0BAQUFADA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBGAEIAUABGAFAAVgAwAFQAXABGAHIAZQBkAHkwHhcNMjYwODA3MTMxNzQ4WhcNMjcwODA3MTkxNzQ4WjA1MTMwMQYDVQQDHioATABBAFAAVABPAFAALQBGAEIAUABGAFAAVgAwAFQAXABGAHIAZQBkAHkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOLvHlQw+bukk/X/OrtOrk2McTfFp+bA+wyxvpZEvj6keFYXqZTK4wvSuuzvHChXuK7lgmwyPg5EiP1mx+PbFfrwG1XjH8zvVtY4ZgxwUKRWYHvTvvpD0snksVsquXwQY6it56AnbZ9QHJQr8O+mq8w1Z6F6rJHHUPM0yPr116FRAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAXaRpSDQRg+trGaLCRMB2kG+JcyTqK5YKmCZ3YmOB1mAqebmATw9VOwI2ZvNToWbxVZD8n+3JXNwh+LPCoD15BG3Y1rklaG1wPvYsI25oTH9/L9e+rOHFpxBnvFHXv5YL23OZ/9TXJJObdW0Iqz6Lq8UNrLtu72jzcswb2HhDER8=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
